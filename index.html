@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,29 +8,20 @@
   </head>
   <body>
     <div class="header"><h1>TskMgmt</h1></div>
-    <section class="add-tsk" id="add-task">
+    <section class="container-task-form">
       <h2>Add a Task</h2>
-
       <form id="task-form">
-        <label>
-          Task Name:
-          <input type="text" id="task-name" required />
-        </label>
-        <label>
-          Category:
-          <input type="text" id="task-category" required />
-        </label>
-        <label>
-          Deadline:
-          <input type="text" id="task-deadline" required />
-        </label>
-        <label>
-          Status:
-          <select id="task-status">
-            <option value="pending">Pending</option>
-            <option value="completed">Completed</option>
-          </select>
-        </label>
+        <label> Task Name: </label>
+        <input type="text" id="task-name" required />
+        <label> Category: </label>
+        <input type="text" id="task-category" required />
+        <label> Deadline: </label>
+        <input type="text" id="task-deadline" required />
+        <label> Status: </label>
+        <select id="task-status">
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
         <button class="add-btn" type="submit">Add Task</button>
       </form>
     </section>
